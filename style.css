@@ -1,142 +1,32 @@
-body{
-  margin:0;
-  font-family:Arial;
-  background:#f4f4f4;
+.tecnologias {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
 }
 
-header{
-  background:green;
-  color:white;
-  text-align:center;
-  padding:40px;
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
 }
 
-nav{
-  background:#145214;
-  padding:15px;
-  text-align:center;
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-nav a{
-  color:white;
-  margin:10px;
-  text-decoration:none;
-  font-weight:bold;
+.card img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    object-fit: cover;
 }
 
-.banner{
-  background:url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1400');
-  background-size:cover;
-  background-position:center;
-  height:300px;
-
-  display:flex;
-  justify-content:center;
-  align-items:center;
- #curiosidade{
-
-  margin-top:30px;
-
-  background:linear-gradient(135deg,#1b5e20,#43a047);
-
-  color:white;
-
-  padding:25px;
-
-  border-radius:15px;
-
-  font-size:22px;
-
-  max-width:700px;
-
-  margin-left:auto;
-
-  margin-right:auto;
-
-  box-shadow:0 0 20px rgba(0,0,0,0.3);
-
-  min-height:120px;
-
-  transition:0.3s;
-
-}
-
-#curiosidade:hover{
-
-  transform:scale(1.03);
-
-} 
-
-  color:white;
-  font-size:40px;
-  font-weight:bold;
-}
-
-section{
-  padding:40px;
-}
-
-.cards{
-  display:flex;
-  gap:20px;
-  flex-wrap:wrap;
-  justify-content:center;
-}
-
-.card{
-  background:white;
-  width:300px;
-  border-radius:10px;
-  overflow:hidden;
-  box-shadow:0 0 10px rgba(0,0,0,0.2);
-}
-
-.card img{
-  width:100%;
-  height:200px;
-  object-fit:cover;
-}
-
-.card h3,
-.card p{
-  padding:10px;
-}
-
-.videos{
-  display:flex;
-  gap:20px;
-  flex-wrap:wrap;
-  justify-content:center;
-}
-
-.artigo{
-  background:white;
-  padding:20px;
-  margin-top:20px;
-  border-left:5px solid green;
-}
-
-.ia-box{
-  text-align:center;
-}
-
-button{
-  background:green;
-  color:white;
-  border:none;
-  padding:15px 25px;
-  border-radius:8px;
-  cursor:pointer;
-  font-size:18px;
-}
-
-button:hover{
-  background:#1f7a1f;
-}
-
-footer{
-  background:#145214;
-  color:white;
-  text-align:center;
-  padding:20px;
+.card p {
+    margin-top: 10px;
+    font-weight: bold;
 }
